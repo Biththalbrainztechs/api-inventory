@@ -1,0 +1,26 @@
+info:
+  name: Register-Tenant
+  type: http
+  seq: 8
+
+http:
+  method: POST
+  url: http://localhost:8082/api/admin/tenant/onboard-tenant
+  headers:
+    - name: Content-Type
+      value: application/json
+  body:
+    type: json
+    data: |-
+      {
+          "name": "Shivam Cements"
+      }
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3Nzg1NTIwOTgsInJvbGVfdHlwZSI6InBsYXRmb3JtIiwic2Vzc2lvbl9pZCI6ImExMzQ3YzQ1LTVhMTEtNGY5Yi1hYWJjLWEyMDYyMjk1ZmJjNSIsInVzZXJfaWQiOiI5NDE0YWI2Ni1hZTEzLTQ5MmYtYmUwNi0wMzkzNTBlNTRkNTcifQ.BpYDnWxxg4RX8VF7f4Dy5ugTTJE0OrDwPPDS2R4a4pM
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

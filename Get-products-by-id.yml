@@ -1,0 +1,23 @@
+info:
+  name: Get-products-by-id
+  type: http
+  seq: 19
+
+http:
+  method: GET
+  url: localhost:8082/api/products/details/86e222e8-aa0d-4fed-bfbb-c2cd92a9dba0
+  headers:
+    - name: Content-Type
+      value: application/json
+  body:
+    type: json
+    data: ""
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NzgwNDI2NDUsInJvbGVfdHlwZSI6InRlbmFudF9hZG1pbiIsInNlc3Npb25faWQiOiI2ODU0NmYzOC1iMDZiLTQ5MmYtOTJmZi00MDBmM2Q0ODQwZWMiLCJ0ZW5hbnRfaWQiOiJiNzhhN2E3Yy1jNDY3LTRhNWUtOWI0My02NjNkOThiZjhlY2QiLCJ1c2VyX2lkIjoiMmM4ZGYzZTYtOWY0Ny00ZWIwLWFjNjEtNjBjNTk1MGQ4NDcwIn0.HYomS2U3Ot4tvC4PynWBfsH279piRznKG87wJy9_OEg
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

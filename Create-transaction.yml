@@ -1,0 +1,40 @@
+info:
+  name: Create-transaction
+  type: http
+  seq: 25
+
+http:
+  method: POST
+  url: http://localhost:8082/api/tenant/create-transaction
+  headers:
+    - name: Content-Type
+      value: application/json
+  body:
+    type: json
+    data: |-
+      {
+          "vendor_id": "39af387f-6234-41fa-9f94-a88372fc5268",
+          "items": [
+              {
+                  "product_id": "1cb866ce-8738-4ce6-999c-e956e8014916",
+                  "location_id": "417c8f4f-6d55-4944-8112-e0e159bfde0a",
+                  "quantity": 5,
+                  "unit_price": 12.00
+              },
+              {
+                  "product_id": "9a699dbf-211c-4c15-af20-0f2179d7c93d",
+                  "location_id": "417c8f4f-6d55-4944-8112-e0e159bfde0a",
+                  "quantity": 3,
+                  "unit_price": 20.00
+              }
+          ]
+      }
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3Nzg1MzI4NzUsInJvbGVfdHlwZSI6InRlbmFudF9hZG1pbiIsInNlc3Npb25faWQiOiI4ZGY5MGI0NC1iMmEyLTQ1ODgtOTgwMy0zOTllYmFlYmY1ZGYiLCJ0ZW5hbnRfaWQiOiIxMWY1ZjVmZS0xNmJiLTRhMjMtYTZiMS1kYTRiYjM4YWE0MWUiLCJ1c2VyX2lkIjoiZGY3M2I3MDYtMWEwYi00YmFiLWE3ZmMtMmY4ZTI5YzVkNTk0In0.p4gEMtPKJHgcuVZ0YSbht2bLkyf9X8kOTKIkyVl0nBU
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

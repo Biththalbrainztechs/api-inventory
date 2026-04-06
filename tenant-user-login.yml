@@ -1,0 +1,25 @@
+info:
+  name: tenant-user-login
+  type: http
+  seq: 3
+
+http:
+  method: POST
+  url: http://localhost:8082/api/auth/tenant-login
+  headers:
+    - name: Content-Type
+      value: application/json
+  body:
+    type: json
+    data: |-
+      {
+        "tenant_slug":"shivam-cements",
+        "username":"jenish123",
+          "password": "secret123"
+      }
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

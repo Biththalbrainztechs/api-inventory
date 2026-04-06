@@ -1,0 +1,29 @@
+info:
+  name: root-login
+  type: http
+  seq: 4
+
+http:
+  method: POST
+  url: http:/localhost:8082/api/auth/root-login
+  headers:
+    - name: Content-Type
+      value: application/json
+  body:
+    type: json
+    data: |-
+      {
+          "email":"jenish1@gmail.com",
+          "password": "secret123"
+      }
+
+runtime:
+  scripts:
+    - type: after-response
+      code: bru.setEnvVar("gt", String(res.getBody().data.access_token));
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

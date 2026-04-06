@@ -1,0 +1,25 @@
+info:
+  name: Register-user
+  type: http
+  seq: 5
+
+http:
+  method: POST
+  url: http://localhost:8082/api/auth/create/platform-user
+  headers:
+    - name: Content-Type
+      value: application/json
+  body:
+    type: json
+    data: |-
+      {
+          "email":"bits@gmail.com",
+          "password": "secret123",
+          "full_name": "Biththal Acharya"
+      }
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,23 @@
+info:
+  name: List-customer
+  type: http
+  seq: 29
+
+http:
+  method: GET
+  url: http://localhost:8082/api/customer/list-customer
+  headers:
+    - name: Content-Type
+      value: application/json
+  body:
+    type: json
+    data: ""
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3Nzg1NTI4ODYsInJvbGVfdHlwZSI6InRlbmFudF91c2VyIiwic2Vzc2lvbl9pZCI6Ijg2MTk2MjAxLWVlZDQtNDkwOC04ZWM0LWEzZjMzZGI2OWQ2NCIsInRlbmFudF9pZCI6Ijg3ZmRhNGFkLTFiNzAtNGQ1Yi05NGQ5LWNlZGY4YzQ4MTQ5ZiIsInVzZXJfaWQiOiI1OGJiN2EzZi1kNDVlLTQyMTAtYTZjYi0zZTZkMDJlNGU4NzkifQ.W1JqgSvy5wyELBFoei-U3mlRcc0iCAID6SgyaP91LRw
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,32 @@
+info:
+  name: Create-products
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: http://localhost:8082/api/products/create
+  headers:
+    - name: Content-Type
+      value: application/json
+  body:
+    type: json
+    data: |
+      {
+        "category_id": "258da5f8-5e39-4dd1-847c-cf26d48d0669",
+        "unit_id": "5c4390b9-5d33-440f-91c4-84619c556ed0",
+        "product_name": "10mm steel",
+        "sku": "STEEL-10MM-001",
+        "cost_price": 20,
+        "selling_price": 650.75,
+        "minimum_stock_level": 100
+      }
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3Nzg3OTE1NzcsInJvbGVfdHlwZSI6InRlbmFudF9hZG1pbiIsInNlc3Npb25faWQiOiIzY2I4ZDI1ZC1lZTM4LTRiZjItYTgwYi0xYzFjNTkyNWMyMDUiLCJ0ZW5hbnRfaWQiOiI4N2ZkYTRhZC0xYjcwLTRkNWItOTRkOS1jZWRmOGM0ODE0OWYiLCJ1c2VyX2lkIjoiNGMwZWQ0MDgtYmE1YS00NmNjLTk5MzUtZTdjNWZhYjQ5ZWI1In0.SsCVU0Uw_YCE2xZWThV5nP0i2QNh8nLmQteHqUMdLY8
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

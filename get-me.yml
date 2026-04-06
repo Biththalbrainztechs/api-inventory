@@ -1,0 +1,23 @@
+info:
+  name: get/me
+  type: http
+  seq: 14
+
+http:
+  method: GET
+  url: localhost:8082/api/users/me
+  headers:
+    - name: Content-Type
+      value: application/json
+  body:
+    type: json
+    data: ""
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NzgwMTM4NDgsInJvbGVfdHlwZSI6InBsYXRmb3JtIiwic2Vzc2lvbl9pZCI6IjNkOWI2MGI5LWEwMzUtNGIxMC05MTU3LTE4MWY3YmE1NTEyYSIsInVzZXJfaWQiOiI5NTM3NmEzNy02NzcwLTRiOGQtYTU3OS0xYTRjNjY1OTIzYjcifQ.alXetvc_7FkQR7cTvohQsEN8zTMFh-DHe4D4AYEWsDQ
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

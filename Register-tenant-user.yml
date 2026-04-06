@@ -1,0 +1,28 @@
+info:
+  name: Register-tenant-user
+  type: http
+  seq: 6
+
+http:
+  method: POST
+  url: http://localhost:8082/api/tenant-admin/create-user
+  headers:
+    - name: Content-Type
+      value: application/json
+  body:
+    type: json
+    data: |-
+      {
+          "username":"jenish123",
+          "password": "secret123",
+          "full_name": "Jenish User"
+      }
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3Nzg1NTI3NjQsInJvbGVfdHlwZSI6InRlbmFudF9hZG1pbiIsInNlc3Npb25faWQiOiJlMzBhOTI3OC0xMWZhLTQ5NmMtODkxZC0yNjFkZDdhNzRiNzIiLCJ0ZW5hbnRfaWQiOiI4N2ZkYTRhZC0xYjcwLTRkNWItOTRkOS1jZWRmOGM0ODE0OWYiLCJ1c2VyX2lkIjoiNGMwZWQ0MDgtYmE1YS00NmNjLTk5MzUtZTdjNWZhYjQ5ZWI1In0.ahIG3eLtQ76kKNvfcWT4lA0Hm656TM1vhR66Gt1I6Rk
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

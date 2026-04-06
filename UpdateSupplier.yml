@@ -1,0 +1,33 @@
+info:
+  name: UpdateSupplier
+  type: http
+  seq: 25
+
+http:
+  method: PATCH
+  url: http:/localhost:8082/api/supplier/update/2699795a-026a-4809-8f90-095aa93b1bce
+  headers:
+    - name: Content-Type
+      value: application/json
+  body:
+    type: json
+    data: |2
+        {
+        "supplier_name": "XYZ Supplies Pvt. Ltd.",
+        "contact_person": "Ramesh Shrestha",
+        "phone": "+977-9801234567",
+        "email": "ramesh@abcsupplies.com",
+        "address": "Kathmandu, Nepal",
+        "tax_registration": "PAN-123456789",
+        "payment_terms": "Net 30",
+        "status": "active"
+      }
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3Nzg0NDkwMzEsInJvbGVfdHlwZSI6InRlbmFudF9hZG1pbiIsInNlc3Npb25faWQiOiIxN2E5NTBiOS0xOWM2LTQ5ODItYmYxNC05YTQyMDVlYmU2MDciLCJ0ZW5hbnRfaWQiOiIxMWY1ZjVmZS0xNmJiLTRhMjMtYTZiMS1kYTRiYjM4YWE0MWUiLCJ1c2VyX2lkIjoiZGY3M2I3MDYtMWEwYi00YmFiLWE3ZmMtMmY4ZTI5YzVkNTk0In0.S5aKKSCcYz7HdMLfNEqA8bOnkBn63Pfw0FpQa_3yu8Y
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

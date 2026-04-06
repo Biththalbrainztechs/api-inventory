@@ -1,0 +1,32 @@
+info:
+  name: Update Product
+  type: http
+  seq: 23
+
+http:
+  method: PATCH
+  url: http:/localhost:8082/api/unit/update/68726e86-2c3b-4af8-ba01-1a2ec925271e
+  headers:
+    - name: Content-Type
+      value: application/json
+  body:
+    type: json
+    data: |-
+      {
+        "product_name":"Steelk 20 mm",
+        "sku":"steel 2mm-0012",
+        "cost_price":"50",
+        default_price:"80",
+        "minimum_stock_level":"333",
+
+        
+      }
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3Nzg0NDkwMzEsInJvbGVfdHlwZSI6InRlbmFudF9hZG1pbiIsInNlc3Npb25faWQiOiIxN2E5NTBiOS0xOWM2LTQ5ODItYmYxNC05YTQyMDVlYmU2MDciLCJ0ZW5hbnRfaWQiOiIxMWY1ZjVmZS0xNmJiLTRhMjMtYTZiMS1kYTRiYjM4YWE0MWUiLCJ1c2VyX2lkIjoiZGY3M2I3MDYtMWEwYi00YmFiLWE3ZmMtMmY4ZTI5YzVkNTk0In0.S5aKKSCcYz7HdMLfNEqA8bOnkBn63Pfw0FpQa_3yu8Y
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

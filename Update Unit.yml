@@ -1,0 +1,28 @@
+info:
+  name: Update Unit
+  type: http
+  seq: 22
+
+http:
+  method: PATCH
+  url: http:/localhost:8082/api/unit/update/5c4390b9-5d33-440f-91c4-84619c556ed0
+  headers:
+    - name: Content-Type
+      value: application/json
+  body:
+    type: json
+    data: |-
+      {
+        "name":"kilogram",
+        "abbreviation":"kgg"
+        
+      }
+  auth:
+    type: bearer
+    token: ""
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

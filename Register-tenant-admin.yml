@@ -1,0 +1,29 @@
+info:
+  name: Register-tenant-admin
+  type: http
+  seq: 7
+
+http:
+  method: POST
+  url: http://localhost:8082/api/admin/tenant/onboard/admin
+  headers:
+    - name: Content-Type
+      value: application/json
+  body:
+    type: json
+    data: |-
+      {
+          "email":"jenish1@gmail.com",
+          "password": "secret123",
+          "full_name": "Jenish shrestha",
+          "tenant_id":"87fda4ad-1b70-4d5b-94d9-cedf8c48149f"
+      }
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NzgwODg5NjksInJvbGVfdHlwZSI6InBsYXRmb3JtIiwic2Vzc2lvbl9pZCI6ImFiMTc4ZjAxLTJlMzAtNDU3OC04ZjViLWU3YzM1NDFmNDQ5YiIsInVzZXJfaWQiOiJmYWVmMzAxYy0wY2I4LTRjZWEtOGIwMy04NzFlOTJkNDc0MDcifQ.-Gp7GjCQTnrxcuCQ4KW7wKlmxmdS-SYK9V2m8i-Fe00
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
