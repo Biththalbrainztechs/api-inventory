@@ -1,0 +1,23 @@
+info:
+  name: GetInventoryDetailsForTransaction
+  type: http
+  seq: 39
+
+http:
+  method: GET
+  url: http:/localhost:8082/api/inventory/list-stocks
+  headers:
+    - name: Content-Type
+      value: application/json
+  body:
+    type: json
+    data: ""
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3Nzk5MTg0NTcsInJvbGVfdHlwZSI6InRlbmFudF9hZG1pbiIsInNlc3Npb25faWQiOiJkZGY0MmU3Zi00NGE0LTQ5Y2EtYTUzNy05MjQ4MjkzYTNlZTIiLCJ0ZW5hbnRfaWQiOiI4N2ZkYTRhZC0xYjcwLTRkNWItOTRkOS1jZWRmOGM0ODE0OWYiLCJ1c2VyX2lkIjoiNGMwZWQ0MDgtYmE1YS00NmNjLTk5MzUtZTdjNWZhYjQ5ZWI1In0.CigIjDTLj9cyvRp0mQ4AX5IlIr4ib5XqOXh-1p8l_Oc
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -14,17 +14,19 @@ http:
     data: |-
       {
           "customer_id": "d7cea9d3-3202-4169-a42c-018534bac3b3",
-          "warehouse_id": "9f684a2f-6069-4a53-9ed0-ee23bf0b6c69",
+         
           "notes": "Walk in customer sale",
           "items": [
               {
                   "product_id": "4f2f3d94-8a3a-4efb-a2a9-6e35616d83b2",
                   "qty": 5,
+                 "warehouse_id": "9f684a2f-6069-4a53-9ed0-ee23bf0b6c69",
                   "unit_price": 120.00
               },
               {
                   "product_id": "63b0726a-d4b7-4575-b7f8-5b80b2636d19",
                   "qty": 2,
+                 "warehouse_id": "9f684a2f-6069-4a53-9ed0-ee23bf0b6c69",
                   "unit_price": 450.00
               }
           ]

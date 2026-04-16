@@ -1,21 +1,23 @@
 info:
-  name: PreviewInvoice
+  name: create invoice
   type: http
-  seq: 35
+  seq: 36
 
 http:
   method: POST
-  url: http:/localhost:8082/api/invoice/preview-invoice
+  url: http:/localhost:8082/api/invoice/generate-invoice
   headers:
     - name: Content-Type
       value: application/json
   body:
     type: json
-    data: |-
+    data: |
       {
         "customer_id": "d7cea9d3-3202-4169-a42c-018534bac3b3",
         "date_from": "2026-03-01T00:00:00Z",
-        "date_to": "2026-04-29T23:59:59Z"
+        "date_to": "2026-04-29T23:59:59Z",
+        "tax_rate": 13.0,
+        "bill_no": "INV-2026-0001"
       }
   auth:
     type: bearer
