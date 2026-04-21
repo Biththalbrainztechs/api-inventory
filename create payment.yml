@@ -5,7 +5,7 @@ info:
 
 http:
   method: POST
-  url: http:/localhost:8082/api/invoice/generate-invoice
+  url: http:/localhost:8082/api/payments/create-payment
   headers:
     - name: Content-Type
       value: application/json
@@ -13,11 +13,9 @@ http:
     type: json
     data: |
       {
-        "customer_id": "d7cea9d3-3202-4169-a42c-018534bac3b3",
-        "date_from": "2026-03-01T00:00:00Z",
-        "date_to": "2026-04-29T23:59:59Z",
-        "tax_rate": 13.0,
-        "bill_no": "INV-2026-0001"
+        "invoice_id": "4cbb5368-c119-4ea8-a78e-47d86f10acf2",
+        "amount":100,
+        "payment_method": "cash"
       }
   auth:
     type: bearer
