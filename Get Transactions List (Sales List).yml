@@ -1,11 +1,11 @@
 info:
-  name: GetinvoiceDetailsFromID
+  name: Get Transactions List (Sales List)
   type: http
-  seq: 40
+  seq: 41
 
 http:
   method: GET
-  url: http:/localhost:8082/api/invoice/invoice-details/4cbb5368-c119-4ea8-a78e-47d86f10acf2
+  url: http:/localhost:8082/api/sales/list-sales
   headers:
     - name: Content-Type
       value: application/json
