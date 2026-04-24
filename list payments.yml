@@ -5,13 +5,13 @@ info:
 
 http:
   method: GET
-  url: http:/localhost:8082/api/payments/list-payments?searchTerm=Ram
+  url: http:/localhost:8082/api/payments/list-payments?searchTerm=
   headers:
     - name: Content-Type
       value: application/json
   params:
     - name: searchTerm
-      value: Ram
+      value: ""
       type: query
   body:
     type: json

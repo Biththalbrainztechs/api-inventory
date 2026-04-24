@@ -5,14 +5,10 @@ info:
 
 http:
   method: GET
-  url: http:/localhost:8082/api/payments/list-payments?searchTerm=
+  url: http:/localhost:8082/api/reports/financial-summary
   headers:
     - name: Content-Type
       value: application/json
-  params:
-    - name: searchTerm
-      value: ""
-      type: query
   body:
     type: json
     data: ""
