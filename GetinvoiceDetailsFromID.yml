@@ -5,7 +5,7 @@ info:
 
 http:
   method: GET
-  url: http:/localhost:8082/api/invoice/invoice-details/4cbb5368-c119-4ea8-a78e-47d86f10acf2
+  url: http:/localhost:8082/api/invoice/invoice-details/ef75949f-2223-4e67-8d31-00d5f4a61d6f
   headers:
     - name: Content-Type
       value: application/json

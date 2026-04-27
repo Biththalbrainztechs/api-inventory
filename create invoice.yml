@@ -11,13 +11,15 @@ http:
       value: application/json
   body:
     type: json
-    data: |
+    data: |-
       {
-        "customer_id": "d7cea9d3-3202-4169-a42c-018534bac3b3",
-        "date_from": "2026-03-01T00:00:00Z",
-        "date_to": "2026-04-29T23:59:59Z",
-        "tax_rate": 13.0,
-        "bill_no": "INV-2026-0001"
+        "customer_id": "acc9af0d-1ab1-46b7-bb5a-b4fc6a0df859",
+          "sale_ids": [
+              "20ced67d-4c7c-421e-964e-9301bf64eabb"
+          ],
+          "bill_no": "BILL-001",
+          "tax_rate": 12,
+          "tax_mode": "exclusive"
       }
   auth:
     type: bearer

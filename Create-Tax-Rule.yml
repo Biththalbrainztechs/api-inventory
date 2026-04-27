@@ -1,0 +1,42 @@
+info:
+  name: Create-Tax-Rule
+  type: http
+  seq: 49
+
+http:
+  method: POST
+  url: http:/localhost:8082/api/sales/create
+  headers:
+    - name: Content-Type
+      value: application/json
+  body:
+    type: json
+    data: |-
+      {
+          "customer_id": "d7cea9d3-3202-4169-a42c-018534bac3b3",
+         
+          "notes": "Walk in customer sale",
+          "items": [
+              {
+                  "product_id": "4f2f3d94-8a3a-4efb-a2a9-6e35616d83b2",
+                  "qty": 5,
+                 "warehouse_id": "9f684a2f-6069-4a53-9ed0-ee23bf0b6c69",
+                  "unit_price": 120.00
+              },
+              {
+                  "product_id": "63b0726a-d4b7-4575-b7f8-5b80b2636d19",
+                  "qty": 2,
+                 "warehouse_id": "9f684a2f-6069-4a53-9ed0-ee23bf0b6c69",
+                  "unit_price": 450.00
+              }
+          ]
+      }
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3Nzg1NTI4ODYsInJvbGVfdHlwZSI6InRlbmFudF91c2VyIiwic2Vzc2lvbl9pZCI6Ijg2MTk2MjAxLWVlZDQtNDkwOC04ZWM0LWEzZjMzZGI2OWQ2NCIsInRlbmFudF9pZCI6Ijg3ZmRhNGFkLTFiNzAtNGQ1Yi05NGQ5LWNlZGY4YzQ4MTQ5ZiIsInVzZXJfaWQiOiI1OGJiN2EzZi1kNDVlLTQyMTAtYTZjYi0zZTZkMDJlNGU4NzkifQ.W1JqgSvy5wyELBFoei-U3mlRcc0iCAID6SgyaP91LRw
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
