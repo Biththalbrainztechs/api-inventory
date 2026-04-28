@@ -4,8 +4,8 @@ info:
   seq: 51
 
 http:
-  method: POST
-  url: http:/localhost:8082/api/tax/create-rule
+  method: PATCH
+  url: http:/localhost:8082/api/tax/update-rule/dcc6e3b3-d9c1-4366-90c5-fbd59ca9562c
   headers:
     - name: Content-Type
       value: application/json
@@ -13,10 +13,13 @@ http:
     type: json
     data: |+
       {
-          "tax_name": "GST 12%",
-          "tax_rate": 12
+          "tax_name": "GST 13%",
+          "tax_rate": 13,
+          "tax_status":"inactive"
         
       }
+
+
 
 
   auth:
