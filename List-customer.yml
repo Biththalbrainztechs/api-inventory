@@ -5,10 +5,14 @@ info:
 
 http:
   method: GET
-  url: http://localhost:8082/api/customer/list-customer
+  url: http://localhost:8082/api/customer/list-customer?searchTerm=
   headers:
     - name: Content-Type
       value: application/json
+  params:
+    - name: searchTerm
+      value: ""
+      type: query
   body:
     type: json
     data: ""

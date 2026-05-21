@@ -5,17 +5,19 @@ info:
 
 http:
   method: POST
-  url: http://localhost:8082/api/auth/platform-login
+  url: "{{local_env}}/auth/platform-login"
   headers:
     - name: Content-Type
       value: application/json
   body:
     type: json
-    data: |-
+    data: |+
       {
-          "email": "bits@gmail.com",
-          "password": "secret123"
+          "email":"jenish1@gmail.com",
+          "password": "jenish@123"
+        
       }
+
 
 settings:
   encodeUrl: true

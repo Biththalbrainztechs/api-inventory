@@ -5,22 +5,26 @@ info:
 
 http:
   method: POST
-  url: http://localhost:8082/api/admin/tenant/onboard/admin
+  url: "{{live_env}}/admin/tenant/onboard/admin"
   headers:
     - name: Content-Type
       value: application/json
   body:
     type: json
-    data: |-
+    data: |+
       {
-          "email":"jenish1@gmail.com",
+          "email":"prasanna+jagadamba_admin@gmail.com",
           "password": "secret123",
-          "full_name": "Jenish shrestha",
-          "tenant_id":"87fda4ad-1b70-4d5b-94d9-cedf8c48149f"
+          "full_name": "prasanna admin",
+          "tenant_id":"9ca4612c-1b66-4675-bb71-1253e29a5b14"
       }
+
+
+
+
   auth:
     type: bearer
-    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NzgwODg5NjksInJvbGVfdHlwZSI6InBsYXRmb3JtIiwic2Vzc2lvbl9pZCI6ImFiMTc4ZjAxLTJlMzAtNDU3OC04ZjViLWU3YzM1NDFmNDQ5YiIsInVzZXJfaWQiOiJmYWVmMzAxYy0wY2I4LTRjZWEtOGIwMy04NzFlOTJkNDc0MDcifQ.-Gp7GjCQTnrxcuCQ4KW7wKlmxmdS-SYK9V2m8i-Fe00
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3Nzg4MjIwNDEsInJvbGVfdHlwZSI6InBsYXRmb3JtIiwic2Vzc2lvbl9pZCI6IjlhMmE4YWE2LWUwZDktNDIwZi05Nzk4LWE4YTg4YzNjMTMwNCIsInVzZXJfaWQiOiI5MjIyYzhiYy03N2JjLTQ3ZTAtODg0My04ZGJlZjZkNTdhYWIifQ.Oyo1moX2HLlRzR-KdZmYyjEaWtNfGhMezhMWjuHqg-s
 
 settings:
   encodeUrl: true

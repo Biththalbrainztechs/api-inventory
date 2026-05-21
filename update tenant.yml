@@ -5,18 +5,21 @@ info:
 
 http:
   method: POST
-  url: http:/localhost:8082/api/tax/create-rule
+  url: http:/localhost:8082/api/tenant-admin/update-tenant-info
   headers:
     - name: Content-Type
       value: application/json
   body:
     type: json
-    data: |+
+    data: |
       {
-          "tax_name": "GST 18%",
-          "tax_rate": 18
+        "address": "Kathmandu, Nepal",
+        "tagline": "Smart Inventory Solutions",
+        "business_name": "Biththal Trading Pvt. Ltd.",
+        "phone_number": "+977-9800000000",
+        "email": "info@biththaltrading.com",
+        "tax_no": "PAN123456789"
       }
-
   auth:
     type: bearer
     token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3Nzg1NTI4ODYsInJvbGVfdHlwZSI6InRlbmFudF91c2VyIiwic2Vzc2lvbl9pZCI6Ijg2MTk2MjAxLWVlZDQtNDkwOC04ZWM0LWEzZjMzZGI2OWQ2NCIsInRlbmFudF9pZCI6Ijg3ZmRhNGFkLTFiNzAtNGQ1Yi05NGQ5LWNlZGY4YzQ4MTQ5ZiIsInVzZXJfaWQiOiI1OGJiN2EzZi1kNDVlLTQyMTAtYTZjYi0zZTZkMDJlNGU4NzkifQ.W1JqgSvy5wyELBFoei-U3mlRcc0iCAID6SgyaP91LRw

@@ -5,10 +5,16 @@ info:
 
 http:
   method: GET
-  url: http://localhost:8082/api/products/list-products
+  url: http://localhost:8082/api/products/list-products?searchTerm=
   headers:
     - name: Content-Type
       value: application/json
+    - name: ""
+      value: ""
+  params:
+    - name: searchTerm
+      value: ""
+      type: query
   body:
     type: json
     data: ""

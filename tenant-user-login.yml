@@ -5,16 +5,16 @@ info:
 
 http:
   method: POST
-  url: http://localhost:8082/api/auth/tenant-login
+  url: "{{live_env}}/auth/tenant-login"
   headers:
     - name: Content-Type
       value: application/json
   body:
     type: json
-    data: |-
+    data: |+
       {
         "tenant_slug":"shivam-cements",
-        "username":"jenish123",
+        "username":"prasanna123",
           "password": "secret123"
       }
 

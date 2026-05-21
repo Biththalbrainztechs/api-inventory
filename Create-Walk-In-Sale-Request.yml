@@ -1,0 +1,52 @@
+info:
+  name: Create-Walk-In-Sale-Request
+  type: http
+  seq: 59
+
+http:
+  method: POST
+  url: http://localhost:8082/api/sales/create/walk-in-sale
+  headers:
+    - name: Content-Type
+      value: application/json
+  body:
+    type: json
+    data: |+
+      {
+          "items": [
+              {
+                  "product_id": "4f2f3d94-8a3a-4efb-a2a9-6e35616d83b2",
+                  "qty": 5,
+                 "warehouse_id": "9f684a2f-6069-4a53-9ed0-ee23bf0b6c69",
+                  "unit_price": 120.00
+              },
+              {
+                  "product_id": "63b0726a-d4b7-4575-b7f8-5b80b2636d19",
+                  "qty": 2,
+                 "warehouse_id": "9f684a2f-6069-4a53-9ed0-ee23bf0b6c69",
+                  "unit_price": 450.00
+              }
+          ],
+          "amount": 5500,
+        "payment_method": "cash",
+        "notes": "Walk-in customer purchase"
+      }
+
+
+
+
+
+
+
+
+
+
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3ODI3ODY1NTgsInJvbGVfdHlwZSI6InRlbmFudF9hZG1pbiIsInNlc3Npb25faWQiOiIxYjhlYzY3My00NjcwLTQ5YWItOGI2ZC05MzIwMGI1ODU5MDUiLCJ0ZW5hbnRfaWQiOiI4N2ZkYTRhZC0xYjcwLTRkNWItOTRkOS1jZWRmOGM0ODE0OWYiLCJ1c2VyX2lkIjoiNGMwZWQ0MDgtYmE1YS00NmNjLTk5MzUtZTdjNWZhYjQ5ZWI1In0.ixTD3v0eSQoW4E1ZCoEtRmURjZtT8R4uzGg6nc_xRyg
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

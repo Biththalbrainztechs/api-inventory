@@ -5,17 +5,19 @@ info:
 
 http:
   method: POST
-  url: http:/localhost:8082/api/auth/root-login
+  url: "{{local_env}}/auth/root-login"
   headers:
     - name: Content-Type
       value: application/json
   body:
     type: json
-    data: |-
+    data: |+
       {
           "email":"jenish1@gmail.com",
           "password": "secret123"
       }
+
+
 
 runtime:
   scripts:

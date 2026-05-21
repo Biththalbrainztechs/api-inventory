@@ -15,7 +15,7 @@ http:
       {
         "product_name":"Steelk 20 mm",
         "sku":"steel 2mm-0012",
-        "cost_price":"50",
+        "cost_price":50,
         default_price:"80",
         "minimum_stock_level":"333",
 
