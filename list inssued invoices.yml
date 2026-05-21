@@ -5,16 +5,20 @@ info:
 
 http:
   method: GET
-  url: http:/localhost:8082/api/invoice/list-invoices
+  url: http:/localhost:8082/api/invoice/list-invoices?date_to=2026-05-19
   headers:
     - name: Content-Type
       value: application/json
+  params:
+    - name: date_to
+      value: 2026-05-19
+      type: query
   body:
     type: json
     data: ""
   auth:
     type: bearer
-    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3Nzg1NTI4ODYsInJvbGVfdHlwZSI6InRlbmFudF91c2VyIiwic2Vzc2lvbl9pZCI6Ijg2MTk2MjAxLWVlZDQtNDkwOC04ZWM0LWEzZjMzZGI2OWQ2NCIsInRlbmFudF9pZCI6Ijg3ZmRhNGFkLTFiNzAtNGQ1Yi05NGQ5LWNlZGY4YzQ4MTQ5ZiIsInVzZXJfaWQiOiI1OGJiN2EzZi1kNDVlLTQyMTAtYTZjYi0zZTZkMDJlNGU4NzkifQ.W1JqgSvy5wyELBFoei-U3mlRcc0iCAID6SgyaP91LRw
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3ODI5NDI0NjYsInJvbGVfdHlwZSI6InRlbmFudF9hZG1pbiIsInNlc3Npb25faWQiOiIzZDBiZDgxYy0wYTUzLTRjOTQtYTdiYi1jYzNkY2U5Njg2N2UiLCJ0ZW5hbnRfaWQiOiI4N2ZkYTRhZC0xYjcwLTRkNWItOTRkOS1jZWRmOGM0ODE0OWYiLCJ1c2VyX2lkIjoiNGMwZWQ0MDgtYmE1YS00NmNjLTk5MzUtZTdjNWZhYjQ5ZWI1In0.TU8HOlSpsdT3Grlod3_HVhe7CCPDCPxv8cOEk6GObp0
 
 settings:
   encodeUrl: true
