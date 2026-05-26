@@ -1,0 +1,23 @@
+info:
+  name: receivables
+  type: http
+  seq: 61
+
+http:
+  method: GET
+  url: http:/localhost:8082/api/reports/receivables
+  headers:
+    - name: Content-Type
+      value: application/json
+  body:
+    type: json
+    data: "\n\n\n\n\n\n\n\n\n\n"
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3ODI5NDI0NjYsInJvbGVfdHlwZSI6InRlbmFudF9hZG1pbiIsInNlc3Npb25faWQiOiIzZDBiZDgxYy0wYTUzLTRjOTQtYTdiYi1jYzNkY2U5Njg2N2UiLCJ0ZW5hbnRfaWQiOiI4N2ZkYTRhZC0xYjcwLTRkNWItOTRkOS1jZWRmOGM0ODE0OWYiLCJ1c2VyX2lkIjoiNGMwZWQ0MDgtYmE1YS00NmNjLTk5MzUtZTdjNWZhYjQ5ZWI1In0.TU8HOlSpsdT3Grlod3_HVhe7CCPDCPxv8cOEk6GObp0
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

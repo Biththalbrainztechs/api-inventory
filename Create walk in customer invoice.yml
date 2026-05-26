@@ -5,20 +5,13 @@ info:
 
 http:
   method: POST
-  url: http://localhost:8082/api/invoice/generate-walkincustomer-invoice
+  url: http://localhost:8082/api/invoice/generate-walkincustomer-invoice/294af200-bc70-434f-888b-2cfd23557a5a
   headers:
     - name: Content-Type
       value: application/json
   body:
     type: json
-    data: |
-      {
-        "sale_id": [
-          "00d57eab-54a3-4cd0-8b9d-37fdbf59cdaf"
-        ],
-        "tax_rate": 13,
-        "tax_mode": "exclusive"
-      }
+    data: ""
   auth:
     type: bearer
     token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3ODI4NTU5NjYsInJvbGVfdHlwZSI6InRlbmFudF9hZG1pbiIsInNlc3Npb25faWQiOiIwMmVjOWQ2Yi1jZWRmLTQxNTMtYjE5ZC01YjI4MWE0ZTUzODAiLCJ0ZW5hbnRfaWQiOiI4N2ZkYTRhZC0xYjcwLTRkNWItOTRkOS1jZWRmOGM0ODE0OWYiLCJ1c2VyX2lkIjoiNGMwZWQ0MDgtYmE1YS00NmNjLTk5MzUtZTdjNWZhYjQ5ZWI1In0.x-_hVjXWhSc-RhxRIp66pICjSnsJ_QIid7BV_My4NsY
